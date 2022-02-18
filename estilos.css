@@ -20,6 +20,10 @@ html {
     --md: 1.4rem;
     --lg: 1.6rem;
 }
+body {
+    position: relative;
+    width: 100vw;
+}
 header {
     width: 100%;
     height: 100%;
@@ -72,3 +76,161 @@ header .header-nav {
 .header-list ul li span {
     margin-right: 0.5rem;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    background-color: var(--background);
+    padding: 2rem 1.7rem 0 1.7rem;
+}
+.perfil-section .perfil-img-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.perfil-section .perfil-img-name img {
+    width: 5rem;
+    border-radius: 50%;
+}
+.perfil-section .perfil-img-name p {
+    margin-left: 2rem;
+    color: var(--font);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+.perfil-section .perfil-status {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.perfil-section .perfil-status p {
+    width: 100%;
+    font-size: var(--sm);
+    padding-left: 0.5rem;
+    line-height: var(--sm);
+    color: var(--font);
+}
+.perfil-section .perfil-status p span svg {
+    margin-right: 1rem;
+}
+.perfil-section .perfil-edit {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #21262d;
+    color: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.perfil-section .perfil-edit {
+    font-size: var(--md);
+    line-height: var(--md);
+    color: var(--font);
+    font-weight: bold;
+}
+.perfil-section .perfil-information p {
+    color: white;
+    font-size: var(--md);
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.perfil-section .perfil-information span {
+    margin-right: 0.5rem;
+}
+.main-cards {
+    display: block;
+}
+.main-cards .main-menu-sticky {
+    background: var(--background);
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    /* padding-top: 1rem; */
+}
+.inline-style {
+    display: flex;
+}
+.main-cards .main-menu-sticky ul {
+    display: flex;
+    color: white;
+    font-size: var(--lg);
+    list-style: none;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+.main-cards .main-menu-sticky ul li {
+    padding: 0 1.5rem;
+    padding-bottom: 0.90rem;
+}
+.main-cards .main-menu-sticky ul li span {
+    padding: 0 0.7rem;
+    background: var(--border);
+    border-radius: 50%;
+    font-size: var(--md);
+}
+.main-cards .main-menu-sticky ul li:nth-child(1) {
+    border-bottom: 2.5px solid var(--red);
+}
+.main-cards-container .main-cards-title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+.main-cards-container .main-cards-title p:nth-child(1) {
+    font-size: var(--lg);
+}
+.main-cards-container .main-cards-title p:nth-child(2) {
+    font-size: var(--sm);
+}
+.main-cards-container .card {
+    height: 20vh;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.main-cards-container .card h3 {
+    font-size: var(--md);
+    color: var(--electric-blue);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.main-cards-container .card h3 span {
+    font-size: 1rem;
+    color: var(--font);
+    padding: 0.5rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+}
+.main-cards-container .card p {
+    color: var(--font);
+    font-size: var(--sm);
+    margin-bottom: 2rem;
+}
+.main-cards-container .card p .color {
+    background: var(--red);
+    color: var(--red);
+    padding: 0.005rem 0.65rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.main-cards-container .card p .color-violet {
+    background: var(--violet);
+    color: var(--violet);
+    padding: 0.005rem 0.65rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
