@@ -15,7 +15,60 @@ html {
     --electric-blue: #1655c4;
     --violet: #563d7c;
     --green: #26a641;
+    --border: #30363d;
     --sm: 1.2rem;
     --md: 1.4rem;
     --lg: 1.6rem;
+}
+header {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    padding: 0 1.7rem;
+    color: var(--font);
+}
+header .header-nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    padding-top: 2.5rem;
+}
+.header-nav img {
+    width: 3.2rem;
+}
+.header-search {
+    width: 100%;
+    height: 2.8rem;
+    background-color: rgba(13, 17, 23, 1);
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+}
+.header-search p {
+    font-size: var(--md);
+    padding-left: 1.5rem;
+    line-height: var(--md);
+}
+.header-list {
+    width: 100%;
+    height: 60%;
+}
+.header-list ul {
+    font-size: var(--md);
+    font-weight: 500;
+    color: white;
+    line-height: 1.4rem;
+    list-style: none;
+}
+.header-list ul li {
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--border);
+}
+.header-list ul li span {
+    margin-right: 0.5rem;
 }
