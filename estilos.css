@@ -471,7 +471,7 @@ main {
     margin-bottom: 2rem;
 }
 .main-cards .repositories-section {
-    width: 100%;
+    width: 95%;
     height: auto;
     border-top: 2px solid var(--border);
     border-left: 2px solid var(--border);
@@ -519,10 +519,11 @@ main {
     margin-top: 0.5rem;
     width: 20%;
     text-align: end;
+    padding-right: 1rem;
 }
 .repositories-container .first-image {
     height: 35vh;
-    width: auto;
+    width: 90%;
     border: 1px solid var(--border);
     border-radius: 8px;
     margin: 2rem 1.5rem 2rem 2rem;
@@ -561,4 +562,40 @@ main {
     padding: 0 0.5rem;
     margin-left: 0.5rem;
 }
-
+.pull-request-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+.pull-request-container ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+.pull-request-container ul li {
+    margin-bottom: 1rem;
+}
+.pull-request-container ul .pull-request-link {
+    display: flex;
+    justify-content: space-between;
+}
+.pull-request-container ul .pull-request-link p:nth-child(1) {
+    color: var(--electric-blue);
+    font-size: var(--md);
+}
+.pull-request-container ul .pull-request-link p:nth-child(2) {
+    color: white;
+    font-size: var(--sm);
+}
+.pull-request-container ul .pull-request-link p:nth-child(2) span {
+    background: var(--violet);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+}
+.pull-request-container .merged {
+    display: flex;
+    justify-content: space-between;
+    color: var(--font);
+}
+.pull-request-container .merged p:nth-child(1) {
+    font-size: var(--sm);
+    font-weight: bold;
+}
