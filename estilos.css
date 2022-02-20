@@ -24,6 +24,7 @@ body {
     position: relative;
     background-color: var(--background);
     width: 100%;
+    justify-content: center;
 }
 header {
     width: 100%;
@@ -82,7 +83,7 @@ main {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
     background-color: var(--background);
-    padding: 2rem 1.7rem 0 1.7rem;
+    padding: 2rem 1rem 0 1.7rem;
     width: 100%;
     max-width: 840px;
 }
@@ -206,11 +207,12 @@ main {
     font-size: var(--sm);
 }
 .main-cards-container .card {
-    height: 20vh;
+    height: auto;
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 .main-cards-container .card h3 {
     font-size: var(--md);
@@ -274,7 +276,7 @@ main {
     width: 100%;
     height: 30vh;
     margin-bottom: 3rem;
-    padding: 1rem;
+    padding: 0.5rem;
     place-content: center;
     
 }
@@ -323,7 +325,7 @@ main {
     grid-row: 1 / 2;
 }
 .stadistics-container .grid-stadistics .text {
-    grid-column: -9 / -23;
+    grid-column: -5 / -19;
     grid-row: 10 / 11;
     font-size: 1rem;
     align-self: center;
@@ -643,6 +645,7 @@ main {
     color: #58a6ff;
 }
 footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 3rem 1rem;
@@ -675,7 +678,8 @@ footer .contact p span img {
     position: relative;
     top: 0.5rem;
 }
-@media screen and (min-width: 386px) {
+/* @media screen and (min-width: 386px) {
+
     .stadistics-container .grid-stadistics p:nth-child(7) {
         display: flex;
         grid-column: -23 / -24;
@@ -716,12 +720,25 @@ footer .contact p span img {
         grid-column: -35 / -36;
         grid-row: 1 / 2;
     }
+    header .header-nav {
+        display: none;
+    }
     main {
-        background-color: #0d1117;
+        background-color: #21262d;
+    }
+    .menu-container--slider {
+        background-color: #21262d;
+    }
+    .main-cards-container .card {
+        background-color: rgba(13, 17, 23, 1);
+    } 
+    .repositories-container .first-image {
+        background-color: rgba(13, 17, 23, 1);
     }
     footer {
-        background-color: #0d1117;
+        background-color: #21262d;
     }
+
 }
 @media screen and (min-width: 590px) {
     .stadistics-container .grid-stadistics p:nth-child(3) {
@@ -750,21 +767,19 @@ footer .contact p span img {
         grid-column: -51 / -52;
         grid-row: 1 / 2;
     }
-}
-@media screen and (min-width: 1200px) {
-    .stadistics-container .grid-stadistics p:nth-child(13) {
-        display: flex;
-        grid-column: -54 / -55 ;
-        grid-row: 3 / 4;
+    header .nav-mobile {
+        display: none;
     }
+}
+@media screen and (min-width: 800px) {
     .stadistics-container .grid-stadistics p:nth-child(14) {
         display: flex;
-        grid-column: -54 / -55 ;
+        grid-column: -55 / -56 ;
         grid-row: 5 / 6;
     } 
     .stadistics-container .grid-stadistics p:nth-child(15) {
         display: flex;
-        grid-column: -54 / -55 ;
+        grid-column: -55 / -56 ;
         grid-row: 7 / 8;
     }
-}
+} */
