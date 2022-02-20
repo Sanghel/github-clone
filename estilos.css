@@ -23,6 +23,7 @@ html {
 body {
     position: relative;
     width: 100vw;
+    background-color: var(--background);
 }
 header {
     width: 100%;
@@ -280,11 +281,14 @@ main {
 .stadistics-container .grid-stadistics p:nth-child(5),
 .stadistics-container .grid-stadistics p:nth-child(6),
 .stadistics-container .grid-stadistics p:nth-child(7),
-.stadistics-container .grid-stadistics p:nth-child(8), 
 .stadistics-container .grid-stadistics p:nth-child(13), 
 .stadistics-container .grid-stadistics p:nth-child(14), 
 .stadistics-container .grid-stadistics p:nth-child(15) {
     display: none;
+}
+.stadistics-container .grid-stadistics p:nth-child(8) {
+    grid-column: -19 / -20;
+    grid-row: 1 / 2;
 }
 .stadistics-container .grid-stadistics p:nth-child(9) {
     grid-column: -15 / -16;
@@ -477,6 +481,7 @@ main {
     border-left: 2px solid var(--border);
     margin-left: 1rem;
     position: relative;
+    /* margin-bottom: 2rem; */
 }
 .repositories-section .date {
     color: white;
@@ -565,6 +570,8 @@ main {
 .pull-request-container {
     width: 100%;
     margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 .pull-request-container ul {
     list-style: none;
@@ -578,7 +585,7 @@ main {
     justify-content: space-between;
 }
 .pull-request-container ul .pull-request-link p:nth-child(1) {
-    color: var(--electric-blue);
+    color: #58a6ff;
     font-size: var(--md);
 }
 .pull-request-container ul .pull-request-link p:nth-child(2) {
@@ -598,4 +605,56 @@ main {
 .pull-request-container .merged p:nth-child(1) {
     font-size: var(--sm);
     font-weight: bold;
+}
+.main-cards .last-button {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: var(--sm);
+    color: #58a6ff;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.main-cards .last-text {
+    color: var(--font);
+    font-size: var(--sm);
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--border);
+}
+.main-cards .last-text span {
+    color: #58a6ff;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    /* align-content: space-between;
+    justify-content: space-between; */
+}
+footer .details ul {
+    color: #58a6ff;
+    font-size: var(--sm);
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+footer .details ul li {
+    margin: 0.5rem 0.5rem;
+}
+footer .contact p {
+    font-size: var(--sm);
+    color: var(--font);
+    text-align: center;
+}
+footer .contact p span {
+    margin-right: 1rem;
+}
+footer .contact p span img {
+    width: 2rem;
+    position: relative;
+    top: 0.5rem;
 }
