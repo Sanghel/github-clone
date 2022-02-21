@@ -863,6 +863,7 @@ footer .contact p span img {
     }
     .main-cards {
         padding-right: 3rem;
+        max-width: 900px;
     }
     .main-cards-container {
         display: flex;
@@ -872,6 +873,9 @@ footer .contact p span img {
     .main-cards-container .card {
         min-width: 230px;
         max-width: 415px;
+    }
+    .stadistics-container {
+        max-width: 800px;
     }
     .stadistics-container .grid-stadistics p:nth-child(13) {
         display: flex;
